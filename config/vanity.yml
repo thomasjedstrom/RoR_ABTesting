@@ -1,0 +1,11 @@
+development: &default
+  adapter: active_record
+  active_record_adapter: postgresql
+  database: abtesting_development
+test:
+  adapter: active_record
+  active_record_adapter: default
+  collecting: false
+production:
+  <<: *default
+  database: abtesting_production

@@ -1,0 +1,26 @@
+<h1>Simple AB Test</h1>
+
+<h4>
+	<a href="/test" id="test">	
+		<%= ab_test(:welcome_message) %>		
+	</a>
+</h4>
+
+<h3>The above button registers 1 successful conversion</h3>
+
+<h3>To View Results, Click Here:</h3>
+<h4>
+	<%= link_to "Results", vanity_path, id: "results" %>
+</h4>
+
+
+<div id="caveat">
+	<h2>Caveat:</h2>
+	<p>
+		Because the test attaches an ID to each user, you can force a "new test" by opening this page in private or incognito mode.
+	</p>
+	<h4>On AB Tests</h4>
+	<p>
+		As a caveat, AB testing may be implemented across a wide variety of variables and can include in depth metrics of users.  This app is intended for demonstration purposes only.
+	</p>	
+</div>
